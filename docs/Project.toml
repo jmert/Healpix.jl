@@ -1,0 +1,7 @@
+[deps]
+Healpix = "5791982e-9993-4c6a-9a71-f887f2b873bc"
+StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
+
+[compat]
+Documenter = "0.25.2, 0.26, 0.27"
+StaticArrays = "0.11, 0.12, 1"
