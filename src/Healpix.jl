@@ -23,7 +23,13 @@ export
 end
 using Base: @propagate_inbounds
 using StaticArrays
-import ..unchecked_sqrt
+
+# Version of sqrt() which skips the domain (x < 0) check for the IEEE floating point types.
+# For nonstandard number types, just fall back to a regular sqrt() since eliminating the
+# domain check is probably no longer the dominant contributor to not vectorizing.
+unchecked_sqrt(x::T) where {T <: Base.IEEEFloat} = Base.sqrt_llvm(x)
+unchecked_sqrt(x::T) where {T <: Integer} = unchecked_sqrt(float(x))
+unchecked_sqrt(x) = Base.sqrt(x)
 
 """
     const UNSEEN = -1.6375e+30
