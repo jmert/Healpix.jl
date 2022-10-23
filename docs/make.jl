@@ -23,7 +23,6 @@ makedocs(
     pages = [
         "Healpix.jl Documentation" => "index.md",
         "Healpix Pixelization" => [
-            "Introduction" => "man/intro.md",
             "Usage" => "man/usage.md",
             "Literature/References" => "man/references.md"
         ],

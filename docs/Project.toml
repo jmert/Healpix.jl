@@ -1,5 +1,7 @@
 [deps]
+Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
 Healpix = "5791982e-9993-4c6a-9a71-f887f2b873bc"
+LiveServer = "16fef848-5104-11e9-1b77-fb7a48bbb589"
 StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
 
 [compat]
