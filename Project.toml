@@ -1,7 +1,7 @@
 name = "Healpix"
 uuid = "5791982e-9993-4c6a-9a71-f887f2b873bc"
 author = ["Justin Willmert <justin@willmert.me>"]
-version = "0.1.0"
+version = "1.0.0"
 
 [deps]
 Compat = "34da2185-b29b-5c13-b0c7-acf172513d20"
