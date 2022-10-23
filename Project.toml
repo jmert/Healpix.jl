@@ -1,7 +1,7 @@
 name = "Healpix"
 uuid = "5791982e-9993-4c6a-9a71-f887f2b873bc"
 author = ["Justin Willmert <justin@willmert.me>"]
-version = "1.0.0"
+version = "1.0.1"
 
 [deps]
 Compat = "34da2185-b29b-5c13-b0c7-acf172513d20"
@@ -11,3 +11,10 @@ StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
 Compat = "3.23, 4"
 StaticArrays = "0.11, 0.12, 1"
 julia = "1"
+
+[extras]
+Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+TestSetExtensions = "98d24dd4-01ad-11ea-1b02-c9a08f80db04"
+
+[targets]
+test = ["Documenter", "TestSetExtensions"]
